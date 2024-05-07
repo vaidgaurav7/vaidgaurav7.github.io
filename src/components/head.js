@@ -39,7 +39,8 @@ const Head = ({ title, description, image }) => {
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   };
-
+  // override with gaurav og
+  seo.image = 'https://i.ibb.co/BqM8t4k/og.png';
   return (
     <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
       <html lang="en" />
